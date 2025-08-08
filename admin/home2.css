@@ -1,0 +1,344 @@
+* {
+    font-family: "Berlin Sans FB";
+    text-transform: capitalize;
+}
+
+/* navbar start */
+#navbarNav {
+    /* margin-left: 10px; */
+    margin-top: 20px;
+    height: 30px;
+
+}
+
+#navbarNav ul li a {
+    color :black;
+    margin-top: 20px;
+}
+
+#logo {
+    margin-right: 200px;
+    position: relative;
+    top:15px;
+}
+
+#sitename{
+    position: relative;
+    right:660px;
+    top:50px;
+    /* color: #000; */
+    font-weight: bolder;
+}
+#logout{
+height: 40px;
+margin-top: 20px;
+margin-left: 10px;
+background-color: white;
+box-shadow: 5px 5px  #2E2F35;
+border-color: #222222;
+}
+#logout a{
+    text-decoration: none;
+    color: #222222;
+    }
+/* navbar end */
+/* questions start */
+#questions{
+    width:100%;
+    height: 120vh;
+    display: grid;
+    justify-content: center;
+}
+#questions .card{
+width: 300px;
+margin-left: 60px;
+
+
+}
+#questions .card-body{
+text-align: center;
+margin-top: 30px;
+}
+#qustionlist{
+    font-family:"head_font" ;
+    color: #009387;
+    font-size: 50px;
+    position: relative;
+    left:200px;
+    top:50px;
+}
+/* questions end */
+/* header start */
+.header{
+    /* grid-column: span 6; */
+    height: 500px;
+    width: 100%;
+    background-color: #E0F8F2;
+    /* display: grid;
+    grid-template-columns: auto auto; */
+}
+#headd1{
+padding-top: 80px;
+padding-left: 40px;
+}
+
+@font-face {
+    font-family: "head_font";
+    src: url("../font/CoveredByYourGrace.ttf");
+}
+
+#quiz_head{
+    font-family:"head_font" ;
+    color: #009387;
+    font-size: 82px;
+    display: inline;
+}
+#quiz_btn{
+    background-color: #FF6D2C;
+    box-shadow: 5px 5px  #2E2F35;
+    border-color: #222222;
+    border-radius:10px ;
+    -webkit-border-radius:10px ;
+    -moz-border-radius:10px ;
+    -ms-border-radius:10px ;
+    -o-border-radius:10px ;
+    color: white;
+    padding: 10px;
+    width: 160px;
+    margin-top: 30px;
+}
+
+
+#headd2{
+    background-image: url("../img/user/back.png");
+    background-size: cover;
+    position: relative;
+    top: 70px;
+    right: 20px;
+    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+}
+
+/* header end */
+
+/* start main */
+.main{
+    background-color: #FDF3EA;
+    width: 100%;
+    height: 850px;
+}
+#main_sec1{
+    text-align: center;
+    padding-top: 35px;
+}
+#qumk{
+    text-align: left;
+    position: relative;
+    left:440px;
+}
+#life{
+    font-family:"head_font" ;
+    color: #009387;
+    font-size: 52px;
+    position: relative;
+    bottom:50px;
+    left:130px;
+}
+#complete{
+    position: relative;
+    bottom: 70px;
+}
+/* second row */
+#txt2{
+    font-family:"head_font" ;
+    color: #009387;
+    font-size: 52px;
+    margin-left: 50px;
+}
+#icon2{
+    border: 3px solid gray;
+    padding-top: 20px;
+    width: 400px;
+    height: 100px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    text-align: center;
+    position: relative;
+    top:0px;
+    left: 50px;
+    z-index: 1;
+
+}
+#ic2{
+background-color: #FDF3EA;
+position: relative;
+top:15px;
+left:100px;
+z-index: 20;
+color: #FF6D2C;
+}
+/* second column */
+#txt3{
+    font-family:"head_font" ;
+    color: #009387;
+    font-size: 52px;
+}
+#icon3{
+    border: 3px solid gray;
+    padding-top: 40px;
+    width: 500px;
+    height: 200px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    text-align: center;
+    position: relative;
+    top:0px;
+    /* left: 50px; */
+    z-index: 1;
+
+}
+/* end main */
+
+/* start section2 */
+.section2{
+    width: 100%;
+    height: 800px;
+    margin-top: 20px;
+    /* margin-bottom: 350px; */
+}
+.section2 h1{
+    text-align: center;
+}
+
+.section2 .row .col-4{
+    width:300px;
+    height: 300px;
+    /* background-color: violet; */
+    margin: 20px;
+    position: relative;
+    left:170px;
+}
+#one{
+    background-color: #FDF3EA;
+}
+#one #hh1,#three h1{
+    padding-top: 20px;
+}
+#two{
+    background-color: #E0F8F2;
+}
+#three{
+    background-color: #EEECFF;  
+}
+#three2{
+    background-color: #EEECFF;
+}
+.mask{
+    -webkit-mask-image: url(../img/user/abstract-shape.png);
+    mask-image: url(../img/user/w3logo.png);
+    mask-repeat:no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    position: relative;
+    bottom:55px;
+    left: 40px;
+}
+.mask1{
+    mask-image: url(../img/user/graph.png);
+    -webkit-mask-image:url(../img/user/graph.png);
+    mask-repeat:no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    position: relative;
+    bottom:15px;
+    left:10px;
+}
+.mask2{
+    mask-image: url(../img/user/calculator.png);
+    -webkit-mask-image:url(../img/user/calculator.png);
+    mask-repeat:no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    position: relative;
+    bottom:25px;
+    left:10px;
+}
+.mask3{
+    mask-image: url(../img/user/eng.png);
+    -webkit-mask-image:url(../img/user/eng.png);
+    mask-repeat:no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    position: relative;
+    bottom:5px;
+    left:10px;
+}
+.mask4{
+    mask-image: url(../img/user/grammar.png);
+    -webkit-mask-image:url(../img/user/grammar.png);
+    mask-repeat:no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    position: relative;
+    bottom:5px;
+    left:10px;
+}
+.mask5{
+    mask-image: url(../img/user/globe2.png);
+    -webkit-mask-image:url(../img/user/globe2.png);
+    mask-repeat:no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    position: relative;
+    bottom:15px;
+    left:10px;
+}
+
+
+/* end section2 */
+
+/* start section3 */
+
+/* contact us */
+
+.contact_us{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    /* background-color: #EEECFF; */
+    height: 384px;
+}
+#formback{
+    background-image: url("../img/user/contact-us.jpg");
+    background-size: cover;
+}
+#quiz_btn2{
+    background-color: #FF6D2C;
+    box-shadow: 5px 5px  #2E2F35;
+    border-color: #222222;
+    border-radius:10px ;
+    -webkit-border-radius:10px ;
+    -moz-border-radius:10px ;
+    -ms-border-radius:10px ;
+    -o-border-radius:10px ;
+    color: white;
+    position: relative;
+    left:320px;
+}
+#FORM{
+    padding-right: 140px;
+    padding-left: 100px;
+    position: relative;
+    top:5px;
+}
+
+/* end contact us */
+/* end section3 */
+

@@ -1,0 +1,103 @@
+/* navbar start */
+*{
+    font-family: "Berlin Sans FB";
+    text-transform: capitalize;
+}
+#navbarNav {
+    /* margin-left: 10px; */
+    margin-top: 20px;
+    height: 30px;
+
+}
+
+#navbarNav ul li a {
+    color :black;
+    margin-top: 20px;
+}
+
+#logo {
+    margin-right: 200px;
+    position: relative;
+    top:15px;
+}
+
+#sitename{
+    position: relative;
+    right:660px;
+    top:50px;
+    /* color: #000; */
+    font-weight: bolder;
+}
+#logout{
+height: 40px;
+margin-top: 20px;
+margin-left: 10px;
+background-color: white;
+box-shadow: 5px 5px  #2E2F35;
+border-color: #222222;
+color: #222222;
+}
+#logout a{
+    text-decoration: none;
+    color: #222222;
+    }
+/* navbar end */
+
+/* start main */
+
+.parent{
+    width:1400px;
+    height: 700px;
+    background-image: url("../img/user/back.png");
+}
+.container{
+    padding-top: 100px;
+    width: 50%;
+    margin-left: 300px;
+}
+.Btn{
+height: 40px;
+margin-top: 20px;
+width: 100%;
+background-color: white;
+box-shadow: 5px 5px  #2E2F35;
+border-color: #222222;
+}
+
+.Btn:hover:not([disabled]){
+    background-color: black;
+    color: white;
+}
+.Btn:disabled{
+    cursor: no-drop;
+}
+
+.card{
+    /* height:400px; */
+    box-shadow: 5px 5px  #2E2F35;
+}
+
+#next-btn{
+    background-color: #FF6D2C;
+    box-shadow: 5px 5px  #2E2F35;
+    border-color: #222222;
+    border-radius:10px ;
+    -webkit-border-radius:10px ;
+    -moz-border-radius:10px ;
+    -ms-border-radius:10px ;
+    -o-border-radius:10px ;
+    color: white;
+    padding: 10px;
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 80%;
+    display: none;
+}
+
+.correct{
+    background-color:palegreen ;
+}
+
+.incorrect{
+    background-color: tomato;
+}
