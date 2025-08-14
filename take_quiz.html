@@ -1,129 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- normalize css -->
-        <link rel="stylesheet" href="css/normalize.css" />
-        <!-- bootstrap css -->
-        <link rel="stylesheet" href="css/bootstrap.min.css" />
-        <!-- font awesome css -->
-        <link rel="stylesheet" href="css/all.min.css" />
-        <link rel="stylesheet" href="css/bootstrap.min.css.map" />
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
-        <link rel="stylesheet" href="css_u/take_quiz.css">
 
-        <title>Take Quiz</title>
-        <link rel="icon" type="image/x-icon"
-            href="img/admin/Rectangle_1__1_-removebg-preview.png" />
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- normalize css -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css.map" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="index.css" />
+    <title>take quiz</title>
+    <link rel="icon" type="image/x-icon" href="img/admin/Rectangle_1__1_-removebg-preview.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="css_u/take_quiz.css">
 
-        <!-- navbar start -->
+    <title>Take Quiz</title>
+    <link rel="icon" type="image/x-icon" href="img/admin/Rectangle_1__1_-removebg-preview.png" />
+</head>
 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+<body>
 
-                <div class="collapse navbar-collapse" id="navbarNav" id="nav22">
-                    <ul class="navbar-nav">
-                        <li id="logo">
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+        <div class="container">
+            <!-- Logo & Site Name -->
+            <a class="navbar-brand d-flex align-items-center brand-text" href="home.html">
+                <img src="img/admin/appique-logo122-01-removebg-preview.png" alt="Quiz Maker Logo" class="me-2"
+                    style="height: 40px" />
+                <span>Quiz Maker</span>
+            </a>
 
-                            <img
-                                src="img/admin/appique-logo122-01-removebg-preview.png"
-                                width="30%" alt />
+            <!-- Mobile Toggle Button -->
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="bi bi-list" style="font-size: 1.5rem; color: black"></i>
+            </button>
 
-                        </li>
-                        <li id="sitename"><p>Quiz Maker</p></li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page"
-                                href="home.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="take_quiz.html">Take Quiz</a>
-                        </li>
+            <!-- Nav Links -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="take_quiz.html">Take
+                            Quiz</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="index.html" class="btn logout-btn">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-                        <button type="button" id="logout" class="btn">  <a href="index.html">LogOut</a> </button>
-
-                    </ul>
+    <!-- navbar end -->
+    <div class="parent">
+        <div class="container container-sm container-md container-lg">
+            <div class="card">
+                <div class="card-body" class="quiz">
+                    <h3 id="question">question is here</h3>
+                    <div id="answer-buttons">
+                        <button class="Btn">Answer 1</button>
+                        <button class="Btn">Answer 2</button>
+                        <button class="Btn">Answer 3</button>
+                        <button class="Btn" style="margin-bottom: 40px;">Answer 4</button>
+                    </div>
+                    <button class="btn" id="next-btn">Next</button>
                 </div>
             </div>
-        </nav>
 
-        <!-- navbar end -->
-<div class="parent">
-
-    <div class="container container-sm container-md container-lg">
-        <div class="card">
-            <div class="card-body" class="quiz">
-                <h3 id="question">question is here</h3>
-                <div id="answer-buttons">
-                    <button class="Btn" >Answer 1</button>
-                    <button class="Btn" >Answer 2</button>
-                    <button class="Btn" >Answer 3</button>
-                    <button class="Btn" style="margin-bottom: 40px;">Answer 4</button>
-                </div>
-                <button class="btn" id="next-btn">Next</button>
-            </div>
         </div>
 
     </div>
 
-</div>
 
 
-        <!-- footer start -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    <!-- bootstrap js -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/all.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="quiz_script.js"></script>
+</body>
 
-                <div class="collapse navbar-collapse" id="navbarNav" id="nav22">
-                    <ul class="navbar-nav">
-                        <li id="logo">
-
-                            <img
-                                src="img/admin/appique-logo122-01-removebg-preview.png"
-                                width="30%" alt />
-
-                        </li>
-                        <li id="sitename"><p>Quiz Maker</p></li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page"
-                                href="home.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="take_quiz.html">Take Quiz</a>
-                        </li>
-
-              <button type="button" id="logout" class="btn">  <a href="index.html">LogOut</a> </button>
-
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- footer end -->
-        <!-- bootstrap js -->
-        <script src="../js/bootstrap.bundle.min.js"></script>
-        <!-- font awesome js -->
-        <script src="../js/all.min.js"></script>
-        <script src="../js/bootstrap.bundle.min.js"></script>
-        <script src="../js/all.min.js"></script>
-        <script type="module"
-            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule
-            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-        
-            <script src="quiz_script.js"></script>
-        </body>
 </html>

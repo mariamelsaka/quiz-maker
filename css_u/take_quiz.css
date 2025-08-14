@@ -1,103 +1,107 @@
 /* navbar start */
-*{
-    font-family: "Berlin Sans FB";
-    text-transform: capitalize;
-}
-#navbarNav {
-    /* margin-left: 10px; */
-    margin-top: 20px;
-    height: 30px;
-
-}
-
-#navbarNav ul li a {
-    color :black;
-    margin-top: 20px;
-}
-
-#logo {
-    margin-right: 200px;
-    position: relative;
-    top:15px;
-}
-
-#sitename{
-    position: relative;
-    right:660px;
-    top:50px;
-    /* color: #000; */
-    font-weight: bolder;
-}
-#logout{
-height: 40px;
-margin-top: 20px;
-margin-left: 10px;
-background-color: white;
-box-shadow: 5px 5px  #2E2F35;
-border-color: #222222;
-color: #222222;
-}
-#logout a{
+.brand-text {
+    color: black !important;
+    font-weight: bold;
     text-decoration: none;
-    color: #222222;
+}
+.brand-text span {
+    color: black !important;
+}
+
+/* Navbar Links */
+.nav-link {
+    color: black !important;
+}
+.nav-link:hover {
+    color: #009387 !important;
+}
+
+/* Logout button style */
+.logout-btn {
+    background-color: white;
+    border: 1px solid #222;
+    box-shadow: 3px 3px #2E2F35;
+    transition: 0.2s;
+}
+
+
+/* Mobile Fixes */
+@media (max-width: 768px) {
+    .logout-btn {
+        width: 100%;
+        margin-top: 10px;
     }
+}
+
+
 /* navbar end */
 
 /* start main */
-
-.parent{
-    width:1400px;
-    height: 700px;
+.parent {
+    width: 100%;
+    min-height: 100vh;
     background-image: url("../img/user/back.png");
-}
-.container{
-    padding-top: 100px;
-    width: 50%;
-    margin-left: 300px;
-}
-.Btn{
-height: 40px;
-margin-top: 20px;
-width: 100%;
-background-color: white;
-box-shadow: 5px 5px  #2E2F35;
-border-color: #222222;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center; /* center vertically */
+    justify-content: center; /* center horizontally */
+    padding: 1rem;
 }
 
-.Btn:hover:not([disabled]){
+.container {
+    padding-top: 2rem;
+    width: 100%;
+    max-width: 600px; /* limits width on big screens */
+    margin: 0 auto;
+}
+
+.Btn {
+    height: 40px;
+    margin-top: 20px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 5px 5px #2E2F35;
+    border-color: #222222;
+}
+
+.Btn:hover:not([disabled]) {
     background-color: black;
     color: white;
 }
-.Btn:disabled{
+
+.Btn:disabled {
     cursor: no-drop;
 }
 
-.card{
-    /* height:400px; */
-    box-shadow: 5px 5px  #2E2F35;
+.card {
+    box-shadow: 5px 5px #2E2F35;
 }
 
-#next-btn{
+#next-btn {
     background-color: #FF6D2C;
-    box-shadow: 5px 5px  #2E2F35;
+    box-shadow: 5px 5px #2E2F35;
     border-color: #222222;
-    border-radius:10px ;
-    -webkit-border-radius:10px ;
-    -moz-border-radius:10px ;
-    -ms-border-radius:10px ;
-    -o-border-radius:10px ;
+    border-radius: 10px;
     color: white;
     padding: 10px;
     width: 100px;
     margin-top: 20px;
-    margin-left: 80%;
+    margin-left: auto;
     display: none;
 }
 
-.correct{
-    background-color:palegreen ;
+.correct {
+    background-color: palegreen;
 }
 
-.incorrect{
+.incorrect {
     background-color: tomato;
+}
+
+/* Small screen tweaks */
+@media (max-width: 576px) {
+    #next-btn {
+        width: 100%;
+    }
 }

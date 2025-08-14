@@ -1,7 +1,3 @@
-* {
-    font-family: "Berlin Sans FB";
-    text-transform: capitalize;
-}
 .mask{
     -webkit-mask-image: url(../img/user/qa.png);
     mask-image: url(../img/user/qa.png);
@@ -20,8 +16,6 @@
     margin-left: 25%;
 }
 .card{
-    /* background-color: #e0f8f2d8; */
-    /* background-color: #e0f8f2; */
     background-color: white;
 
 }
@@ -39,23 +33,7 @@
     width:220px;
     height:100px;
 }
-#but2{
-    margin-left: 500px;
-    margin-top: 30px;
-    background-color: #FF6D2C;
-    box-shadow: 5px 5px  #2E2F35;
-    border-color: #222222; 
-    -webkit-border-radius:10px ;
-    -moz-border-radius:10px ;
-    -ms-border-radius:10px ;
-    -o-border-radius:10px ;
-     border-radius:10px ;
-    color: white;
-}
-#but2 a{
-text-decoration: none;
-    color: white;
-}
+
 .gender{
     margin-top: 20px;
     margin-left: 20px;

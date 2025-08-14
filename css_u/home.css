@@ -1,55 +1,46 @@
-* {
-    font-family: "Berlin Sans FB";
-    text-transform: capitalize;
-}
-
 /* navbar start */
-#navbarNav {
-    /* margin-left: 10px; */
-    margin-top: 20px;
-    height: 30px;
-
-}
-
-#navbarNav ul li a {
-    color :black;
-    margin-top: 20px;
-}
-
-#logo {
-    margin-right: 270px;
-    position: relative;
-    top:15px;
-}
-
-#sitename{
-    position: relative;
-    right:660px;
-    top:50px;
-    /* color: #000; */
-    font-weight: bolder;
-}
-#logout{
-height: 40px;
-margin-top: 20px;
-margin-left: 10px;
-background-color: white;
-box-shadow: 5px 5px  #2E2F35;
-border-color: #222222;
-}
-#logout a{
+/* Force "Quiz Maker" text to stay black */
+.brand-text {
+    color: black !important;
+    font-weight: bold;
     text-decoration: none;
-    color: #222222;
+}
+.brand-text span {
+    color: black !important;
+}
+
+/* Navbar Links */
+.nav-link {
+    color: black !important;
+}
+.nav-link:hover {
+    color: #009387 !important;
+}
+
+/* Logout button style */
+.logout-btn {
+    background-color: white;
+    border: 1px solid #222;
+    box-shadow: 3px 3px #2E2F35;
+    transition: 0.2s;
+}
+
+
+/* Mobile Fixes */
+@media (max-width: 768px) {
+    .logout-btn {
+        width: 100%;
+        margin-top: 10px;
     }
+}
+
+
 /* navbar end */
 /* header start */
 .header{
-    /* grid-column: span 6; */
     height: 500px;
     width: 100%;
     background-color: #E0F8F2;
-    /* display: grid;
-    grid-template-columns: auto auto; */
 }
 #headd1{
 padding-top: 80px;
@@ -71,11 +62,11 @@ padding-left: 40px;
     background-color: #FF6D2C;
     box-shadow: 5px 5px  #2E2F35;
     border-color: #222222;
-    border-radius:10px ;
     -webkit-border-radius:10px ;
     -moz-border-radius:10px ;
     -ms-border-radius:10px ;
     -o-border-radius:10px ;
+    border-radius:10px ;
     padding: 10px;
     width: 160px;
     margin-top: 30px;
@@ -93,123 +84,125 @@ color: white;
     position: relative;
     top: 70px;
     right: 20px;
-    transform: rotate(10deg);
     -webkit-transform: rotate(10deg);
     -moz-transform: rotate(10deg);
     -ms-transform: rotate(10deg);
     -o-transform: rotate(10deg);
+    transform: rotate(10deg);
 }
+
 
 /* header end */
 
-/* start main */
+
 .main{
     background-color: #FDF3EA;
     width: 100%;
-    height: 850px;
 }
-#main_sec1{
-    text-align: center;
-    padding-top: 35px;
-}
-#qumk{
-    text-align: left;
-    position: relative;
-    left:440px;
-}
-#life{
-    font-family:"head_font" ;
-    color: #009387;
-    font-size: 52px;
-    position: relative;
-    bottom:50px;
-    left:130px;
-}
-#complete{
-    position: relative;
-    bottom: 70px;
-}
-/* second row */
-#txt2{
-    font-family:"head_font" ;
-    color: #009387;
-    font-size: 52px;
-    margin-left: 50px;
-}
-#icon2{
-    border: 3px solid gray;
-    padding-top: 20px;
-    width: 400px;
-    height: 100px;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-    text-align: center;
-    position: relative;
-    top:0px;
-    left: 50px;
-    z-index: 1;
 
+/* Top Section */
+#life {
+    font-family: "head_font";
+    color: #009387;
+    font-size: 3rem;
 }
-#ic2{
-background-color: #FDF3EA;
-position: relative;
-top:15px;
-left:100px;
-z-index: 20;
-color: #FF6D2C;
+
+#main_sec1 h2, #main_sec1 p {
+    margin: 0.5rem 0;
 }
-/* second column */
+
+/* Skill Section */
+.skill-title {
+    font-family: "head_font";
+    color: #009387;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.skill-desc {
+    margin-left: 0;
+    margin-bottom: 1rem;
+}
+
+/* Quote Box */
+.quote-box {
+    border: 3px solid gray;
+    border-radius: 20px;
+    padding: 1rem;
+    position: relative;
+    background-color: #FDF3EA;
+    margin-bottom: 1.5rem;
+}
+
+.quote-icon {
+    color: #FF6D2C;
+    font-size: 1.5rem;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+}
+
+.quote-text {
+    margin-top: 1.5rem;
+}
+
+/* Quiz Button */
+.btn-quiz {
+    background-color: #FF6D2C;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-shadow: 5px 5px #2E2F35;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px){
+    #life {
+        font-size: 2.5rem;
+    }
+    .skill-title {
+        font-size: 1.8rem;
+    }
+    .quote-box {
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 575px){
+    #life {
+        font-size: 2rem;
+    }
+    .skill-title {
+        font-size: 1.5rem;
+    }
+    .quote-box {
+        font-size: 0.9rem;
+    }
+    .btn-quiz {
+        width: 100%;
+        text-align: center;
+    }
+}
+/* end main */
 #txt3{
     font-family:"head_font" ;
     color: #009387;
-    font-size: 52px;
+    font-size: 3.25rem;
 }
-#icon3{
-    border: 3px solid gray;
-    padding-top: 40px;
-    width: 500px;
-    height: 200px;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-    text-align: center;
-    position: relative;
-    top:0px;
-    /* left: 50px; */
-    z-index: 1;
-
-}
-/* end main */
 
 /* start section2 */
 .section2{
     width: 100%;
-    height: 800px;
+    height: 100%;
     margin-top: 20px;
-    /* margin-bottom: 350px; */
 }
 .section2 h1{
     text-align: center;
 }
-
-.section2 .row .col-4{
-    width:300px;
-    height: 300px;
-    /* background-color: violet; */
-    margin: 20px;
-    position: relative;
-    left:170px;
-}
 #one{
     background-color: #FDF3EA;
-}
-#one #hh1,#three h1{
-    padding-top: 20px;
 }
 #two{
     background-color: #E0F8F2;
@@ -220,101 +213,108 @@ color: #FF6D2C;
 #three2{
     background-color: #EEECFF;
 }
-.mask{
-    -webkit-mask-image: url(../img/user/abstract-shape.png);
-    mask-image: url(../img/user/w3logo.png);
-    mask-repeat:no-repeat;
-    -webkit-mask-repeat: no-repeat;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    position: relative;
-    bottom:55px;
-    left: 40px;
+.section2 .card{
+    height: 20rem;
 }
-.mask1{
-    mask-image: url(../img/user/graph.png);
-    -webkit-mask-image:url(../img/user/graph.png);
-    mask-repeat:no-repeat;
-    -webkit-mask-repeat: no-repeat;
+.mask,
+.mask1,
+.mask2,
+.mask3,
+.mask4,
+.mask5 {
     position: relative;
-    bottom:15px;
-    left:10px;
-}
-.mask2{
-    mask-image: url(../img/user/calculator.png);
-    -webkit-mask-image:url(../img/user/calculator.png);
-    mask-repeat:no-repeat;
     -webkit-mask-repeat: no-repeat;
-    position: relative;
-    bottom:25px;
-    left:10px;
-}
-.mask3{
-    mask-image: url(../img/user/eng.png);
-    -webkit-mask-image:url(../img/user/eng.png);
-    mask-repeat:no-repeat;
-    -webkit-mask-repeat: no-repeat;
-    position: relative;
-    bottom:5px;
-    left:10px;
-}
-.mask4{
-    mask-image: url(../img/user/grammar.png);
-    -webkit-mask-image:url(../img/user/grammar.png);
-    mask-repeat:no-repeat;
-    -webkit-mask-repeat: no-repeat;
-    position: relative;
-    bottom:5px;
-    left:10px;
-}
-.mask5{
-    mask-image: url(../img/user/globe2.png);
-    -webkit-mask-image:url(../img/user/globe2.png);
-    mask-repeat:no-repeat;
-    -webkit-mask-repeat: no-repeat;
-    position: relative;
-    bottom:15px;
-    left:10px;
+    mask-repeat: no-repeat;
 }
 
+.mask1,
+.mask2,
+.mask3,
+.mask4,
+.mask5{
+    left:2rem;
+}
+.mask{
+    width: 100%;
+    max-width: 13.5rem;
+    max-height: 16rem;
+    height: 100%;
+    -webkit-mask-image: url(../img/user/abstract-shape.png);
+    mask-image: url(../img/user/abstract-shape.png);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    bottom: 25px;
+    left: 5rem;
+}
+.mask1{
+    max-height: 13.8rem;
+    margin: 1rem;
+    -webkit-mask-image:url(../img/user/graph.png);
+     mask-image: url(../img/user/graph.png);
+    bottom:15px;
+}
+.mask2{
+    -webkit-mask-image:url(../img/user/calculator.png);
+     mask-image: url(../img/user/calculator.png);
+    bottom:25px;
+}
+.mask3{ 
+    -webkit-mask-image:url(../img/user/eng.png);
+    mask-image: url(../img/user/eng.png);
+    bottom:5px;
+}
+.mask4{
+    -webkit-mask-image:url(../img/user/grammar.png);
+    mask-image: url(../img/user/grammar.png);
+    bottom:5px;
+}
+.mask5{  
+    -webkit-mask-image:url(../img/user/globe2.png);
+    mask-image: url(../img/user/globe2.png); 
+    bottom:15px;
+    
+}
 
 /* end section2 */
 
 /* start section3 */
-
 /* contact us */
-
-.contact_us{
+.contact_us {
     margin-top: 30px;
     margin-bottom: 50px;
-    /* background-color: #EEECFF; */
-    height: 384px;
 }
-#formback{
+
+#formback {
     background-image: url("../img/user/contact-us.jpg");
     background-size: cover;
+    background-position: center;
+    min-height: 300px; /* for mobile visibility */
 }
-#quiz_btn2{
+
+#quiz_btn2 {
     background-color: #FF6D2C;
-    box-shadow: 5px 5px  #2E2F35;
+    box-shadow: 5px 5px #2E2F35;
     border-color: #222222;
-    border-radius:10px ;
-    -webkit-border-radius:10px ;
-    -moz-border-radius:10px ;
-    -ms-border-radius:10px ;
-    -o-border-radius:10px ;
+    border-radius: 10px;
     color: white;
-    position: relative;
-    left:320px;
 }
-#FORM{
-    padding-right: 140px;
-    padding-left: 100px;
-    position: relative;
-    top:5px;
+
+#FORM {
+    padding: 2rem;
+}
+
+/* Small screen tweaks */
+@media (max-width: 767px) {
+    #FORM {
+        padding: 1rem;
+    }
+    #quiz_btn2 {
+        width: 100%;
+        display: block;
+    }
 }
 
 /* end contact us */

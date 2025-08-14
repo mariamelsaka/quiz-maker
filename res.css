@@ -1,0 +1,82 @@
+* {
+    font-family: "Berlin Sans FB";
+    text-transform: capitalize;
+}
+
+.mask {
+    -webkit-mask-image: url(../img/user/qa.png);
+    mask-image: url(../img/user/qa.png);
+    -webkit-mask-repeat: repeat;
+    mask-repeat: repeat;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    top: 10%;
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    margin-top: 10%;
+}
+
+#hello {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#smile img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#but2 {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #FF6D2C;
+    box-shadow: 5px 5px #2E2F35;
+    border-color: #222222;
+    border-radius: 10px;
+    color: white;
+}
+
+#but2 a {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .container {
+        top: 5%;
+        width: 95%;
+    }
+
+    #hello {
+        font-size: 18px;
+    }
+
+    #smile img {
+        max-width: 150px;
+    }
+
+    #log{
+    margin-top: 62%;
+    }
+    #reg{
+        margin-top: 20%;
+    }
+}
